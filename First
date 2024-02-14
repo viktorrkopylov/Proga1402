@@ -1,6 +1,4 @@
 #include <iostream>
-#include "CashRegister.h"
-#include "DispenserType.h"
 
 class CashRegister {
 private:
