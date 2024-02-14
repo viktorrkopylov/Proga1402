@@ -1,10 +1,6 @@
-//Прикрепляю код без разбиение на заголовочные файлы (на всякий случай)
-
-
-
-
-
 #include <iostream>
+#include "CashRegister.h"
+#include "DispenserType.h"
 
 class CashRegister {
 private:
@@ -17,7 +13,7 @@ public:
 
 	~CashRegister() {}
 
-	int GetCurrentBalance() {
+	int getCurrentBalance() {
 		return cashOnHand;
 	}
 
@@ -57,6 +53,8 @@ public:
 	}
 
 };
+
+
 
 void ShowSelections() {
 	std::cout << "В нашем автомате:\n1. Конфеты\n2. Чипсы\n3. Жвачка\n4. Печенье\nЧто вы хотите выбрать? (нажмите оределенную цифру для выбора)\n\n0. Отмена" << std::endl;
@@ -126,4 +124,3 @@ int main() {
 	}
 	return 0;
 }
-
